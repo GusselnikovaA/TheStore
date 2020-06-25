@@ -1,0 +1,26 @@
+header.header 
+  .header-wrap
+    .header__logo 
+      include logo
+    .header-search
+      .header__category.category
+        button.button.category__button
+          span All Categories
+          svg.search(width="16" height="16")
+            use(xlink:href="#arrow-down")
+        ul.list.category-list.hide
+          li.category-list__item
+          li.category-list__item
+          li.category-list__item
+          li.category-list__item
+      form.header__form.search
+        input.input.search__input(type="text" placeholder="Search (E.g., iPhone)")
+        button.button.search__button(type="submit")
+          include search
+    .header-icons
+      .header-icons__like
+        include like
+      .header-icons__man
+        include man
+      .header-icons__cart
+        include cart

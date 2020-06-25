@@ -1,0 +1,28 @@
+.nav 
+  background-color: $background-light-color
+  border-bottom: 1px solid $border-color
+  padding: 13px
+  &-wrap 
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-sidebar 
+    &__button
+      display: flex
+      span 
+        margin-right: 6px
+  &-list 
+    display: flex
+    &__item 
+      margin-right: 30px 
+      &:last-child 
+        margin-right: 0
+  &-country 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__icon 
+      border-radius: 50%
+      overflow: hidden
+    &__icon , &__language, &__currency
+      margin-right: 8px
