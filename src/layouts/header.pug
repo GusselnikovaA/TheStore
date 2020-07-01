@@ -1,7 +1,8 @@
 header.header 
   .header-wrap
-    .header__logo 
-      include logo
+    a(href="https://thestore.com/" target="_blank")
+      svg.header__logo(width="148" height="48")
+        use(xlink:href="#logo")
     .header-search
       .header__category.category
         button.button.category__button
@@ -14,13 +15,20 @@ header.header
           li.category-list__item
           li.category-list__item
       form.header__form.search
-        input.input.search__input(type="text" placeholder="Search (E.g., iPhone)")
+        input.input.search__input(type="text")
         button.button.search__button(type="submit")
-          include search
+          svg.header__search(width="28" height="28")
+            use(xlink:href="#search")
     .header-icons
       .header-icons__like
-        include like
+        a(href="#" target="_blank")
+          svg.header__like(width="28" height="28")
+            use(xlink:href="#like")
       .header-icons__man
-        include man
+        a(href="#" target="_blank")
+          svg.header__man(width="28" height="28")
+            use(xlink:href="#man")
       .header-icons__cart
-        include cart
+        a(href="#" target="_blank")
+          svg.header__cart(width="28" height="28")
+            use(xlink:href="#cart")

@@ -5,7 +5,7 @@ html
   scroll-behavior: smooth
   
 body 
-  font-size: 14px
+  font-family: 'Helvetica', sans-serif
 
 img
   max-width: 100%
@@ -14,10 +14,14 @@ a
   text-decoration: none
   outline: none
   cursor: pointer
+  color: inherit
+
+.title 
+  margin: 0
 
 .container 
   width: 90%
-  max-width: 1440px
+  max-width: 1128px
   margin: auto
 
 .list 
@@ -33,13 +37,16 @@ a
   border: none
 
 ::-webkit-input-placeholder
-  color: $disabled-color
+  color: $medium-text-color
 ::-moz-placeholder
-  color: $disabled-color
+  color: $medium-text-color
 // ::-webkit-input-placeholder /* WebKit browsers */
 // :-moz-placeholder /* Mozilla Firefox 4 to 18 */
 // ::-moz-placeholder /* Mozilla Firefox 19+ */
 // :-ms-input-placeholder /* Internet Explorer 10+ */
+
+// svg path
+//   fill: inherit
 
 
 .button 
@@ -51,7 +58,18 @@ a
 .hide 
   display: none
 
+#hot 
+  color: $hot-color
+
+.facebook, .twitter, .pinterest, .instagram 
+  fill: $medium-text-color
+
+
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
   // HOVER эффекты блока HEADER 
+
+.facebook, .twitter, .pinterest, .instagram 
+  &:hover
+    fill: $light-color
  

@@ -1,0 +1,123 @@
+.footer 
+  &-container 
+    max-width: 1128px
+    margin: auto
+  &-wrap 
+    display: flex
+    flex-direction: column
+
+  &-offer 
+    display: flex
+    justify-content: space-between
+    padding-top: 90px 
+    padding-bottom: 100px
+    &__title 
+      margin-bottom: 14px
+      font-size: 28px
+      line-height: 40px
+      +Poppins-Medium
+  &-rate, &-discount 
+    width: 50% 
+    display: flex 
+    flex-direction: column 
+  &-rate 
+    &__stars 
+      margin-bottom: 16px
+    &__star 
+      margin-right: 12px
+      &:first-child 
+        fill: #EB4CAE
+      &:nth-child(2) 
+        fill: #D940AA
+      &:nth-child(3) 
+        fill: #C244A9
+      &:nth-child(4)  
+        fill: #C141BA
+      &:last-child 
+        fill: #B636C6
+    &__text 
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 50px
+      color: $medium-text-color
+  &-discount 
+    &__text 
+      max-width: 410px
+      font-size: 14px
+      line-height: 20px
+      margin: 0
+      margin-bottom: 30px
+      color: $medium-text-color
+  &-form 
+    font-size: 18px
+    line-height: 27px
+    +Poppins-Medium
+    &__input 
+      width: 306px
+      padding: 15px 
+      padding-left: 25px
+      border: 2px solid $input-border-color
+      border-radius: 4px
+      margin-right: 8px
+    &__button 
+      width: 142px
+      background-color: $secondary-color
+      padding: 17px 30px
+      border-radius: 4px
+
+
+  &-menu 
+    display: flex
+    flex-direction: column
+    color: $disabled-color
+    font-size: 12px
+    padding-bottom: 35px
+    &_color 
+      background-color: $main-color
+  &-history 
+    padding-top: 60px
+  &-nav 
+    display: flex 
+    justify-content: space-between
+    padding-top: 16px
+    border-top: 1px solid $medium-text-color
+    &__title 
+      line-height: 16px
+      margin-bottom: 10px
+      color: $light-color
+  &-list 
+    &__item 
+      line-height: 16px
+      margin-bottom: 10px
+  &-social 
+    display: flex 
+    align-items: center
+    &__item 
+      margin-right: 14px
+  &-support 
+    &__call 
+      font-size: 18px
+      line-height: 27px
+      +Poppins-Medium
+  &__info 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    margin-top: 50px
+  &__logo ~ svg
+    width: 101px 
+    height: 34px
+  &-country 
+    display: flex 
+    align-items: center
+    padding: 16px
+    border: 1px solid $medium-text-color
+    border-radius: 2px
+    color: $light-color
+    line-height: 24px
+    &__name, &__language
+      padding: 0 20px
+      border-right: 1px solid $medium-text-color
+    &__currency 
+      padding-left: 20px
+    

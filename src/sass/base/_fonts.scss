@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url('../fonts/Poppins/Poppins-Medium.eot');
+  src: url('../fonts/Poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Poppins/Poppins-Medium.woff') format('woff'),
+      url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('../fonts/Poppins/Poppins-Regular.eot');
+  src: url('../fonts/Poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Poppins/Poppins-Regular.woff') format('woff'),
+      url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica/HelveticaNowDisplay-Regular.eot');
+  src: url('../fonts/Helvetica/HelveticaNowDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Helvetica/HelveticaNowDisplay-Regular.woff2') format('woff2'),
+      url('../fonts/Helvetica/HelveticaNowDisplay-Regular.woff') format('woff'),
+      url('../fonts/Helvetica/HelveticaNowDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin Poppins-Medium {
+  font-family: 'Poppins Medium', sans-serif;
+}
+
+@mixin Poppins {
+  font-family: 'Poppins Regular', sans-serif;
+}
+
