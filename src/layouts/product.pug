@@ -1,0 +1,63 @@
+.product 
+  .container
+    nav.product-nav 
+      ul.list.product-nav-list 
+        li.product-nav-list__item 
+          a(href="#") Main Page
+        li.product-nav-list__item 
+          a(href="#") Tablet
+        li.product-nav-list__item 
+          a(href="#") Apple iPad Pro (11”) 32GB Space Gray
+    .product-main 
+      .product-wrap
+        .product-image 
+          img(src="img/ipad.jpg", alt="ipad")
+          svg.product-image__scale(width="28" height="28")
+            use(xlink:href="#search")
+        .product-info 
+          h1.title.product__title Apple iPad Pro (11") 32GB Space Gray
+          .product__by By 
+            a(href="https://thestore.com/search/apple?search=apple&brand=Apple") Apple
+          .product__rate 
+          .product__price
+            span.product__price_new $300.00
+            span.product__price_old $800.00USD
+          .product-grade 
+            span Product grade: 
+            span.product-grade__status ReStored 
+            span.product-grade__description What is ReStored?
+      .product-certified 
+        include certified
+      .product-accordeon 
+        ul.list.product-accordeon-list
+          li.product-accordeon__item
+            .product-accordeon__item_view
+              h2.title.product-accordeon__title Product information
+              svg.product-accordeon_open(width="30" height="28")
+                use(xlink:href="#plus")
+            .product-accordeon__content
+              .product__overview
+                h3.title.product-accordeon__subtitle Overview
+                p.product-accordeon__text — 11-inch Retina display with ProMotion, True Tone, and— wide color — A10X Fusion chip — Touch ID fingerprint sensor — 12MP back camera, 7MP FaceTime HD front camera — Four speaker audio — 802.11ac Wi-Fi — Up to 10 hours of battery life — Lightning connector for charging and accessories — Group FaceTime, Screen Time, and more
+              .product__certified
+                h3.title.product-accordeon__subtitle Certified ReStored <br> condition
+                p.product-accordeon__text Certified ReStored products are guaranteed to function just like new. The Store's experts perform full diagnostic tests, thoroughly clean each product, and use manufacturer  replacement parts for all major electronics. ReStored products have little to no signs of wear, and no visible imperfections from 12 inches away. All products arrive with a fully functional battery and accessories. Learn more 
+              .product__warranty
+                h3.title.product-accordeon__subtitle Warranty & support
+                p.product-accordeon__text The Store’s guaranteed 1-year warranty comes free with every purchase. If your item stops working as expected within 12 months of the purchase date, we’ll happily fix, replace, or refund your item. Learn more 
+          li.product-accordeon__item
+            .product-accordeon__item_view
+              h2.title.product-accordeon__title Technical specifications
+              svg.product-accordeon_open(width="30" height="28")
+                use(xlink:href="#plus")
+            .product-accordeon__content 
+          li.product-accordeon__item
+            .product-accordeon__item_view
+              h2.title.product-accordeon__title Product history
+              svg.product-accordeon_open(width="30" height="28")
+                use(xlink:href="#plus")
+          li.product-accordeon__item
+            .product-accordeon__item_view
+              h2.title.product-accordeon__title Customer review (1)
+              svg.product-accordeon_open(width="30" height="28")
+                use(xlink:href="#plus")

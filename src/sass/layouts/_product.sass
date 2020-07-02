@@ -1,0 +1,97 @@
+.product 
+
+  &-nav-list 
+    display: flex
+    padding: 20px 0
+    &__item
+      line-height: 20px
+      &:not(:first-child)
+        &:before 
+          content: " / "
+          white-space: pre
+      &:last-child 
+        color: $medium-text-color
+
+  &-main 
+    display: flex
+    flex-direction: column
+  &-wrap
+    display: flex
+
+  &-image 
+    width: 50%
+    position: relative
+    &__scale
+      position: absolute
+      bottom: 20px
+      right: 54px
+      fill: $medium-text-color
+
+  &-info 
+    width: 50%
+  &__title 
+    font-size: 34px
+    line-height: 42px
+    margin-bottom: 30px
+    +Poppins-Medium
+  &__by 
+    color: $medium-text-color
+    a 
+      color: $main-color
+  &__rate 
+    margin-bottom: 40px
+  &__price 
+    margin-bottom: 31px
+    &_new 
+      font-size: 28px
+      line-height: 40px
+      margin-right: 20px
+      +Poppins-Medium
+    &_old 
+      text-decoration-line: line-through
+      color: $medium-text-color
+  &-grade 
+    color: $medium-text-color
+    &__status 
+      margin: 0 5px
+    &__description 
+      color: $link-color
+
+  &-accordeon 
+    &-list 
+    &__item 
+      padding: 24px 0
+      padding-right: 24px
+      border-top: 1px solid $input-border-color 
+      border-bottom: 1px solid $input-border-color 
+      &_view 
+        display: flex
+        justify-content: space-between
+    &__content 
+      padding-top: 20px
+    &__title 
+      font-size: 28px
+      line-height: 40px
+      +Poppins-Medium
+    &__subtitle 
+      width: 264px 
+      margin-right: 24px
+      font-size: 18px
+      line-height: 27px
+      color: $main-color
+      +Poppins-Medium
+    &__text 
+      margin: 0
+      font-size: 18px
+      line-height: 27px
+      width: 552px
+      padding-bottom: 20px
+      border-bottom: 1px solid $input-border-color 
+      color: $medium-text-color
+      +Poppins
+  &__overview, &__certified, &__warranty
+    padding-top: 30px
+    display: flex
+  &__warranty > .product-accordeon__text 
+    border-bottom: none
+  

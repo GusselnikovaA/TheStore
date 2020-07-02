@@ -1,17 +1,25 @@
 .recommend 
   padding-top: 158px 
   padding-bottom: 168px
+  background-color: $background-medium-color
+  &-wrap 
+    position: relative
   &__title 
     margin-bottom: 39px
     font-size: 34px
     line-height: 42px
     +Poppins-Medium
+  &-slider 
+    &__item 
+      position: relative
   &-card 
     position: relative
     padding: 48px
     padding-bottom: 24px
+    min-height: 517px
     &:before 
-      content: "$50 Off"
+      content: "$50\0a  Off"
+      white-space: pre
       display: flex
       justify-content: center 
       align-items: center
@@ -45,10 +53,25 @@
       border-radius: 3px
       margin-bottom: 6px
     &__new-price, &__old-price
-      font-size: 14px
+      // font-size: 14px
       line-height: 20px
     &__new-price 
       margin-right: 10px
     &__old-price 
       text-decoration-line: line-through
       color: $medium-text-color
+  &__like 
+    position: absolute 
+    right: 24px 
+    bottom: 24px
+    stroke: $medium-text-color
+  &-arrows
+    &__left, &__right 
+      position: absolute 
+      top: 50%
+      stroke: $dark-color
+      z-index: 1
+    &__left 
+      left: 0
+    &__right 
+      right: 0

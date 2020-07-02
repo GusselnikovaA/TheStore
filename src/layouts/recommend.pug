@@ -1,31 +1,62 @@
 section.recommend 
-  .container 
+  .container.recommend-wrap
     h2.title.recommend__title You might also like... 
     .recommend-slider 
-      a(href="#")
-        .recommend-card
-          .recommend-card__image
-            img(src="img/items/item1.jpg")
-          h3.title.recommend-card__title Logitech Crayon for iPad
-          .recommend-card__info 
-            .recommend-card__condition ReStored
-            span.recommend-card__new-price $50.00 
-            span.recommend-card__old-price $ 100.00
-      a(href="#")
-        .recommend-card
-          .recommend-card__image
-            img(src="img/items/item2.jpg")
-          h3.title.recommend-card__title Smart Cover for iPad
-          .recommend-card__info 
-            .recommend-card__condition ReStored
-            span.recommend-card__new-price $150.00 
-            span.recommend-card__old-price $ 200.00
-      a(href="#")
-        .recommend-card
-          .recommend-card__image
-            img(src="img/items/item3.jpg")
-          h3.title.recommend-card__title IPhone XR “Red”
-          .recommend-card__info 
-            .recommend-card__condition ReStored
-            span.recommend-card__new-price $670.00 
-            span.recommend-card__old-price $ 789.00
+      .recommend-slider__item
+        a(href="#")
+          .recommend-card
+            .recommend-card__image
+              img(src="img/items/item1.jpg")
+            h3.title.recommend-card__title Logitech Crayon for iPad
+            .recommend-card__info 
+              .recommend-card__condition ReStored
+              span.recommend-card__new-price $50.00 
+              span.recommend-card__old-price $ 100.00 
+        a(href="#")
+          svg.recommend__like(width="28" height="28")
+            use(xlink:href="#like")
+      .recommend-slider__item
+        a(href="#")
+          .recommend-card
+            .recommend-card__image
+              img(src="img/items/item2.jpg")
+            h3.title.recommend-card__title Smart Cover for iPad
+            .recommend-card__info 
+              .recommend-card__condition ReStored
+              span.recommend-card__new-price $150.00 
+              span.recommend-card__old-price $ 200.00
+        a(href="#")
+          svg.recommend__like(width="28" height="28")
+              use(xlink:href="#like")
+      .recommend-slider__item
+        a(href="#")
+          .recommend-card
+            .recommend-card__image
+              img(src="img/items/item3.jpg")
+            h3.title.recommend-card__title IPhone XR “Red”
+            .recommend-card__info 
+              .recommend-card__condition ReStored
+              span.recommend-card__new-price $670.00 
+              span.recommend-card__old-price $ 789.00
+        a(href="#")
+          svg.recommend__like(width="28" height="28")
+              use(xlink:href="#like")
+      .recommend-slider__item
+        a(href="#")
+          .recommend-card
+            .recommend-card__image
+              img(src="img/items/item2.jpg")
+            h3.title.recommend-card__title Smart Cover for iPad
+            .recommend-card__info 
+              .recommend-card__condition ReStored
+              span.recommend-card__new-price $150.00 
+              span.recommend-card__old-price $ 200.00
+        a(href="#")
+          svg.recommend__like(width="28" height="28")
+              use(xlink:href="#like")
+    .recommend-arrows
+          svg.recommend-arrows__left(width="22" height="16")
+            use(xlink:href="#arrow-back")
+          svg.recommend-arrows__right(width="22" height="16")
+            use(xlink:href="#arrow-next")
+
