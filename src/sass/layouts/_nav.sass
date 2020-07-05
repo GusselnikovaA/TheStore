@@ -17,10 +17,9 @@
     display: flex
     &__item 
       margin-right: 30px 
+      color: $medium-text-color
       &:last-child 
         margin-right: 0
-      a 
-        color: $medium-text-color
   &-country 
     display: flex
     align-items: center
@@ -30,3 +29,12 @@
       overflow: hidden
     &__icon , &__language, &__currency
       margin-right: 8px
+
+@media (max-width: 1230px)
+  .nav
+    &-list
+      display: none     
+
+@media (max-width: 1050px)
+  .nav
+    display: none

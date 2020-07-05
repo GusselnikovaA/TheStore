@@ -5,12 +5,18 @@ $('.recommend-slider').slick({
   speed: 2000,
   dots: true,
   prevArrow: $('.recommend-arrows__left'),
-  nextArrow: $('.recommend-arrows__right')
-  // responsive: [{
-  //     breakpoint: 1010,
-  //     settings: {
-  //       centerMode: false,
-  //       slidesToShow: 1
-  //     }
-  //   }]
+  nextArrow: $('.recommend-arrows__right'),
+  responsive: [{
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
 });

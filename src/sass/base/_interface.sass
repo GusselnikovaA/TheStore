@@ -21,8 +21,7 @@ a
   margin: 0
 
 .container 
-  width: 90%
-  max-width: 1128px
+  max-width: 1250px
   margin: auto
 
 .list 
@@ -37,6 +36,12 @@ a
   outline: none
   border: none
 
+.progress 
+  outline: none
+  border: none
+  -webkit-appearance: none
+  overflow: hidden
+
 ::-webkit-input-placeholder
   color: $medium-text-color
 ::-moz-placeholder
@@ -45,6 +50,13 @@ a
 // :-moz-placeholder /* Mozilla Firefox 4 to 18 */
 // ::-moz-placeholder /* Mozilla Firefox 19+ */
 // :-ms-input-placeholder /* Internet Explorer 10+ */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
+  // display: none; <- Crashes Chrome on hover
+  -webkit-appearance: none
+  appearance: none
+  margin: 0
+  // Apparently some margin are still there even though it's hidden
 
 // svg path
 //   fill: inherit
@@ -61,16 +73,42 @@ a
 
 #hot 
   color: $hot-color
+  &:hover 
+    color: $main-color
 
 .facebook, .twitter, .pinterest, .instagram 
   fill: $medium-text-color
 
+@media (max-width: 1280px)
+  .container 
+    max-width: 1050px
+
+@media (max-width: 1080px)
+  .container 
+    width: 90%
+    max-width: 1050px
+
 
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
-  // HOVER эффекты блока HEADER 
+  .nav
+    &-list
+      &__item 
+        &:hover 
+          color: $main-color
 
-.facebook, .twitter, .pinterest, .instagram 
-  &:hover
-    fill: $light-color
+  .product
+    &-nav
+      &-list
+        &__item 
+          &:hover 
+            color: $medium-text-color
+
+  .footer-list__item, .footer-support__call
+    &:hover 
+      color: $light-color
+
+  .facebook, .twitter, .pinterest, .instagram 
+    &:hover
+      fill: $light-color
  

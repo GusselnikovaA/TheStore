@@ -1,6 +1,7 @@
 .header 
   background-color: $main-color
   color: $medium-text-color
+
   &-wrap 
     width: 100%
     margin: auto
@@ -9,21 +10,62 @@
     align-items: center
     padding: 20px
     padding-bottom: 18px
+
+  &-burger 
+    display: none
+    outline: none
+    background-color: transparent 
+    border: none
+    &__line 
+      width: 20px 
+      height: 2px 
+      background-color: $light-color
+      position: relative
+      &:before, &:after
+        position: absolute 
+        left: 0
+        content: ''
+        display: block
+        width: 20px 
+        height: 2px 
+        background-color: $light-color
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+      &:before 
+        top: -4px
+      &:after
+        top: 4px
+      &_active
+        background-color: transparent
+        &:before 
+          transform: rotate(45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+        &:after
+          transform: rotate(-45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  &__logo
+    &_mobile 
+      display: none
+
   &-search 
     display: flex
     align-items: center
     background-color: $light-color
     border-radius: 30px
+
   &__form 
     padding: 10px
     padding-left: 23px
     padding-right: 5px
     width: 766px
+
   &-icons 
     display: flex
     align-items: center
     &__like 
-      margin-right: 44px 
+      margin-right: 44px
     &__man 
       margin-right: 34px
     &__cart 
@@ -36,9 +78,63 @@
         display: flex
         justify-content: center
         align-items: center
+
   &__like, &__man 
     stroke: $light-color
-  &__cart 
-    stroke: $main-color
 
+  &__cart
+    stroke: $main-color
+    path
+      fill: $main-color
+
+@media (max-width: 1350px)
+  .header 
+    &__form 
+      width: 666px
+
+@media (max-width: 1230px)
+  .header 
+    &__form 
+      width: 500px
+
+@media (max-width: 900px)
+  .header 
+    &__form 
+      width: 366px
+
+@media (max-width: 768px)
+  .header 
+    &-wrap 
+      padding: 12px
+
+    &-burger 
+      display: block
+      margin-right: 28px
+
+    &__logo
+      display: none
+      &_mobile 
+        display: block
+
+    &__form 
+      padding: 0
+      width: 48px
+      background-color: $main-color
+
+    &-search 
+      background-color: $main-color
+      order: -1
+
+    &__search 
+      fill: $light-color
+
+    &-icons
+      &__man
+        display: none
+      &__like 
+        margin-right: 20px
+      &__cart 
+        a
+          width: 36px 
+          height: 36px
         

@@ -197,17 +197,25 @@
   
 
 @media (max-width: 768px) {
+    .slick-dots {
+        bottom: -50px;
+        text-align: left;
+    }
+
     .slick-dots li {
-        width: 50px;
-        height: 3px;
-        margin: 0 3px;
+        margin: 0 4px;
     }
-    .slick-dots li button {
-        width: 50px;
-        height: 3px;
+
+    .slick-dots li:nth-child(n+4) {
+        display: none;
     }
-    .slick-dots li button:before {
-        width: 50px;
-        height: 3px;
-    }
+
+    // .slick-dots li button {
+    //     width: 50px;
+    //     height: 3px;
+    // }
+    // .slick-dots li button:before {
+    //     width: 50px;
+    //     height: 3px;
+    // }
   }

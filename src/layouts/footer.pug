@@ -1,7 +1,7 @@
 footer.footer 
   .footer-wrap
     .footer-offer_color
-      .footer-container
+      .container
         .footer-offer 
           .footer-rate
             h3.title.footer-offer__title What others are saying
@@ -26,11 +26,22 @@ footer.footer
               input.footer-form__input(type="text" placeholder="Enter your email address")
               button.button.footer-form__button(type="submit") Sign up
     .footer-menu_color
-      .footer-container
+      .container
         .footer-menu
           nav.footer-history
+            a.footer-history__back(href="#") 
+              svg(width="24" height="24")
+                use(xlink:href="#arrow-back")
+              span Back to home
+            ul.list.footer-history-list 
+              li.footer-history__item 
+                a(href="#") Main Page 
+              li.footer-history__item 
+                a(href="#") Tablet 
+              li.footer-history__item 
+                a(href="#") Apple iPad Pro (11”) 32GB Space Gray
           nav.footer-nav
-            .footer-shop 
+            .footer-nav__item.footer-shop 
               h4.title.footer-nav__title Shop Online
               ul.list.footer-list 
                 li.footer-list__item
@@ -45,7 +56,7 @@ footer.footer
                   a(href="#" target="_blank") Laptops
                 li.footer-list__item
                   a(href="#" target="_blank") All Departments
-            .footer-customer
+            .footer-nav__item.footer-customer
               h4.title.footer-nav__title Customer Service
               ul.list.footer-list 
                 li.footer-list__item
@@ -54,7 +65,7 @@ footer.footer
                   a(href="#" target="_blank") Shipping Rates & Policies
                 li.footer-list__item
                   a(href="#" target="_blank") Returns & Refunds
-            .footer-manage
+            .footer-nav__item.footer-manage
               h4.title.footer-nav__title Manage Your Account
               ul.list.footer-list 
                 li.footer-list__item
@@ -63,7 +74,7 @@ footer.footer
                   a(href="#" target="_blank") Your Account
                 li.footer-list__item
                   a(href="#" target="_blank") Browsing History
-            .footer-about
+            .footer-nav__item.footer-about
               h4.title.footer-nav__title Get to Know Us
               ul.list.footer-list 
                 li.footer-list__item
@@ -74,7 +85,7 @@ footer.footer
                   a(href="#" target="_blank") FAQ
                 li.footer-list__item
                   a(href="#" target="_blank") Contact us
-            .footer-contact
+            .footer-nav__item.footer-contact
               h4.title.footer-nav__title Connect with The Store
               ul.list.footer-social
                 li.footer-social__item
@@ -93,14 +104,98 @@ footer.footer
                   a(href="https://www.instagram.com/shopthestore/" target="_blank")
                     svg.instagram(width="24" height="24")
                       use(xlink:href="#instagram")
-            .footer-support 
+            .footer-nav__item.footer-support 
               h4.title.footer-nav__title Customer Support
               a.footer-support__call(href="tel:1-844-427-8673") 1-844-42-78673
+
+          ul.list.footer-nav_mobile
+            li.footer-nav__item
+              .footer-nav__item_view
+                h2.title.footer-nav_mobile__title Shop
+                svg.footer_open(width="16" height="16")
+                  use(xlink:href="#plus")
+              ul.list.footer-nav__item_content
+                li.footer-list__item
+                  a(href="#" target="_blank") Brands
+                li.footer-list__item
+                  a(href="#" target="_blank") Hot Deals
+                li.footer-list__item
+                  a(href="#" target="_blank") Cellphones
+                li.footer-list__item
+                  a(href="#" target="_blank") Wearables
+                li.footer-list__item
+                  a(href="#" target="_blank") Laptops
+                li.footer-list__item
+                  a(href="#" target="_blank") All Departments
+            li.footer-nav__item
+              .footer-nav__item_view
+                h2.title.footer-nav_mobile__title Customer Service
+                svg.footer_open(width="16" height="16")
+                  use(xlink:href="#plus")
+              ul.list.footer-nav__item_content
+                li.footer-list__item
+                  a(href="#" target="_blank") Contact Info
+                li.footer-list__item
+                  a(href="#" target="_blank") Shipping Rates & Policies
+                li.footer-list__item
+                  a(href="#" target="_blank") Returns & Refunds
+            li.footer-nav__item
+              .footer-nav__item_view
+                h2.title.footer-nav_mobile__title Manage Your Account
+                svg.footer_open(width="16" height="16")
+                  use(xlink:href="#plus")
+              ul.list.footer-nav__item_content
+                li.footer-list__item
+                  a(href="#" target="_blank") Your Orders
+                li.footer-list__item
+                  a(href="#" target="_blank") Your Account
+                li.footer-list__item
+                  a(href="#" target="_blank") Browsing History
+            li.footer-nav__item
+              .footer-nav__item_view
+                h2.title.footer-nav_mobile__title Get to Know Us
+                svg.footer_open(width="16" height="16")
+                  use(xlink:href="#plus")
+              ul.list.footer-nav__item_content
+                li.footer-list__item
+                  a(href="#" target="_blank") About Us
+                li.footer-list__item
+                  a(href="#" target="_blank") Why Certified ReStored?
+                li.footer-list__item
+                  a(href="#" target="_blank") FAQ
+                li.footer-list__item
+                  a(href="#" target="_blank") Contact us
+
+          .footer-contact_mobile 
+            .footer-contact__social
+              h4.title.footer-nav__title Social Media
+              ul.list.footer-social
+                li.footer-social__item
+                  a(href="https://www.facebook.com/thestoreshop" target="_blank")
+                    svg.facebook(width="24" height="24")
+                      use(xlink:href="#facebook")
+                li.footer-social__item
+                  a(href="https://twitter.com/thestoreshop" target="_blank")
+                    svg.twitter(width="24" height="24")
+                      use(xlink:href="#twitter")
+                li.footer-social__item
+                  a(href="https://www.pinterest.ru/" target="_blank")
+                    svg.pinterest(width="24" height="24")
+                      use(xlink:href="#pinterest")
+                li.footer-social__item
+                  a(href="https://www.instagram.com/shopthestore/" target="_blank")
+                    svg.instagram(width="24" height="24")
+                      use(xlink:href="#instagram")
+            .footer-contact__support 
+              h4.title.footer-nav__title Customer Support
+              a.footer-support__call(href="tel:1-844-427-8673") 1-844-42-78673
+
           .footer__info
-            a(href="https://thestore.com/" target="_blank")
-              svg.footer__logo(width="101" height="34")
-                use(xlink:href="#logo")
-            span.footer__copyright © 2020 The Store. All rights reserved. Terms of Use | Privacy Policy
+            .footer__copyright
+              a(href="https://thestore.com/" target="_blank")
+                svg.footer__logo(width="101" height="34")
+                  use(xlink:href="#logo")
+              span © 2020 The Store. All rights reserved. Terms of Use | Privacy Policy
             .footer-country
               svg.footer-country__icon(width="24" height="24")
                 use(xlink:href="#usa")

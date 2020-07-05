@@ -1,0 +1,33 @@
+.feedback 
+  font-size: 18px
+  line-height: 27px
+  +Poppins
+  &-user 
+    padding-left: 36px
+    position: relative
+    margin-bottom: 5px
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 24px 
+      height: 24px 
+      border-radius: 50% 
+      background-color: $secondary-color
+  &-user, &__title 
+    color: $main-color
+    +Poppins-Medium
+  &__date 
+    font-size: 14px
+  &-rate 
+    display: flex
+    margin-bottom: 5px
+  &__star 
+    margin-right: 5px
+    fill: $main-color 
+  &__title 
+    margin-left: 10px
+    color: $main-color
+  &__text 
+    margin-bottom: 0

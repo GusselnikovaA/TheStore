@@ -1,5 +1,6 @@
 .product 
-
+  width: 75%
+  padding-bottom: 83px
   &-nav-list 
     display: flex
     padding: 20px 0
@@ -19,16 +20,23 @@
     display: flex
 
   &-image 
-    width: 50%
+    width: 60%
     position: relative
     &__scale
-      position: absolute
-      bottom: 20px
-      right: 54px
-      fill: $medium-text-color
-
+      fill: $light-color
+      &-button 
+        position: absolute
+        bottom: 20px
+        right: 20px
+        width: 48px 
+        height: 48px 
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $disabled-star-color
   &-info 
-    width: 50%
+    width: 40%
   &__title 
     font-size: 34px
     line-height: 42px
@@ -38,8 +46,19 @@
     color: $medium-text-color
     a 
       color: $main-color
-  &__rate 
+  &-rate 
     margin-bottom: 40px
+    display: flex
+    align-items: center
+    line-height: 40px
+    &__number 
+      margin-left: 5px
+      color: $link-color
+    &__star 
+      margin-right: 5px
+      fill: $main-color 
+      &:nth-child(4), &:nth-child(5) 
+        fill: $disabled-star-color
   &__price 
     margin-bottom: 31px
     &_new 
@@ -50,48 +69,55 @@
     &_old 
       text-decoration-line: line-through
       color: $medium-text-color
+  &__add 
+    display: none
+
   &-grade 
     color: $medium-text-color
+    margin-bottom: 10px
     &__status 
       margin: 0 5px
     &__description 
       color: $link-color
-
-  &-accordeon 
-    &-list 
-    &__item 
-      padding: 24px 0
-      padding-right: 24px
-      border-top: 1px solid $input-border-color 
-      border-bottom: 1px solid $input-border-color 
-      &_view 
-        display: flex
-        justify-content: space-between
-    &__content 
-      padding-top: 20px
-    &__title 
-      font-size: 28px
-      line-height: 40px
-      +Poppins-Medium
-    &__subtitle 
-      width: 264px 
-      margin-right: 24px
-      font-size: 18px
-      line-height: 27px
-      color: $main-color
-      +Poppins-Medium
-    &__text 
-      margin: 0
-      font-size: 18px
-      line-height: 27px
-      width: 552px
-      padding-bottom: 20px
-      border-bottom: 1px solid $input-border-color 
-      color: $medium-text-color
-      +Poppins
-  &__overview, &__certified, &__warranty
-    padding-top: 30px
+  &-restore 
+    width: 127px 
+    height: 62px
     display: flex
-  &__warranty > .product-accordeon__text 
-    border-bottom: none
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 2px solid $input-border-color
+    border-radius: 4px
+    color: $medium-text-color
+    &__title
+      font-size: 18px
+      line-height: 27px
+      +Poppins-Medium
+    span 
+      display: block
+
+@media (max-width: 1280px) 
+  .product
+    width: 70%
+    &-image
+      width: 50% 
+      margin-right: 40px
+    &-info 
+      width: 50%
+
+@media (max-width: 1080px)
+  .product
+    width: 100%
+    &-certified 
+      padding-top: 555px
+
+@media (max-width: 900px)
+  .product 
+    &-certified 
+      padding-top: 800px
+    &__add 
+      display: block
+
+
+
   

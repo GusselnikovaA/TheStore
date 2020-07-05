@@ -3,7 +3,11 @@ header.header
     a(href="https://thestore.com/" target="_blank")
       svg.header__logo(width="148" height="48")
         use(xlink:href="#logo")
+      svg.header__logo_mobile(width="36" height="36")
+        use(xlink:href="#logo-mobile")
     .header-search
+      button.header-burger.burger_alert
+        span.header-burger__line
       .header__category.category
         button.button.category__button
           span All Categories

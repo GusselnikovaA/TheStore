@@ -2,21 +2,28 @@
   padding-top: 158px 
   padding-bottom: 168px
   background-color: $background-medium-color
+
   &-wrap 
     position: relative
+
   &__title 
     margin-bottom: 39px
     font-size: 34px
     line-height: 42px
     +Poppins-Medium
+
   &-slider 
     &__item 
       position: relative
+
   &-card 
     position: relative
     padding: 48px
     padding-bottom: 24px
     min-height: 517px
+    background-color: $light-color
+    margin: 0 12px
+
     &:before 
       content: "$50\0a  Off"
       white-space: pre
@@ -33,14 +40,30 @@
       font-size: 18px
       line-height: 27px
       +Poppins-Medium
+
     &__image 
       margin-bottom: 11px
+
     &__title 
       font-size: 28px
       line-height: 40px
       max-width: 280px
-      margin-bottom: 46px
       +Poppins-Medium
+
+    &__rate 
+      display: flex
+      align-items: center
+      line-height: 40px
+      &-number 
+        margin-left: 3px
+        color: $medium-text-color
+
+    &__star 
+      margin-right: 5px
+      fill: $main-color 
+      &:nth-child(4), &:nth-child(5) 
+        fill: $disabled-star-color
+
     &__condition 
       display: flex
       justify-content: center 
@@ -51,20 +74,25 @@
       background-color: $secondary-color
       border: 1px solid $secondary-color
       border-radius: 3px
+      margin-top: 46px
       margin-bottom: 6px
+
     &__new-price, &__old-price
-      // font-size: 14px
       line-height: 20px
+
     &__new-price 
       margin-right: 10px
+
     &__old-price 
       text-decoration-line: line-through
       color: $medium-text-color
+
   &__like 
     position: absolute 
     right: 24px 
     bottom: 24px
     stroke: $medium-text-color
+
   &-arrows
     &__left, &__right 
       position: absolute 
@@ -75,3 +103,44 @@
       left: 0
     &__right 
       right: 0
+
+@media (max-width: 1070px)
+  .recommend 
+    padding-top: 90px 
+    padding-bottom: 90px
+    &__title 
+      font-size: 28px
+    &-card
+      display: flex 
+      flex-direction: column
+      padding: 16px
+      min-height: 480px
+      justify-content: space-between
+      &:before 
+        top: 64px
+      &__title 
+        font-size: 20px
+        order: -1
+        margin-bottom: 30px
+      &__image 
+        margin-bottom: 11px
+        display: flex
+        justify-content: center
+        align-items: center
+      &__condition 
+        margin-top: 20px
+
+    &-arrows 
+      display: none
+
+@media (max-width: 668px)
+  .recommend 
+    &-card 
+      &:before 
+        width: 70px 
+        height: 70px
+        font-size: 14px
+        line-height: 20px
+        top: 95px
+      &__title 
+        margin-bottom: 40px

@@ -1,0 +1,21 @@
+.chat 
+  display: flex
+  justify-content: center 
+  align-items: center
+  position: fixed
+  bottom: 50px 
+  right: 50px
+  width: 96px 
+  height: 48px
+  border-radius: 70px
+  background-color: $main-color
+  z-index: 5
+
+@media (max-width: 768px)
+  .chat 
+    bottom: 20px 
+    right: 20px
+
+@media (max-width: 320px)
+  .chat 
+    display: none

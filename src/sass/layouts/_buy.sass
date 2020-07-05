@@ -1,0 +1,98 @@
+.buy
+  display: flex
+  flex-direction: column
+  padding: 24px
+  background-color: $background-progress-color
+  &__title 
+    font-size: 18px
+    line-height: 27px
+    margin-bottom: 21px
+    color: $main-color
+    +Poppins-Medium
+    span 
+      font-size: 14px
+      color: $medium-text-color
+  &__delivery 
+    color: $medium-text-color
+    line-height: 20px
+  &__ships 
+    display: block
+    line-height: 20px
+    margin-bottom: 26px
+  &-quantity 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 21px
+    &__control 
+      display: flex
+      border: 2px solid $input-border-color
+      border-radius: 4px
+    &__plus, &__minus 
+      width: 48px 
+      height: 48px 
+      background-color: $light-color
+      &-icon 
+        stroke: $disabled-color
+    &__value 
+      text-align: center
+      font-size: 18px
+      line-height: 27px
+      +Poppins
+    &__subtitle 
+      color: $medium-text-color
+    &__value 
+      width: 75px
+  &__price 
+    line-height: 20px 
+    margin-bottom: 23px
+    &_old 
+      margin-left: 10px
+      text-decoration-line: line-through 
+      color: $medium-text-color
+  &__add 
+    font-size: 18px
+    line-height: 27px
+    +Poppins-Medium
+    background-color: $secondary-color
+    width: 240px 
+    height: 56px 
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 58px
+    border-radius: 4px
+  &__deliver 
+    color: $medium-text-color 
+    max-width: 200px
+    margin-bottom: 21px
+    span 
+      color: $main-color
+  &__favorites 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 240px 
+    height: 48px
+    font-size: 18px
+    line-height: 27px
+    +Poppins-Medium
+    border-radius: 4px
+    background-color: $input-border-color
+    &-icon 
+      stroke: $main-color
+      margin-left: 8px
+
+@media (max-width: 900px)
+  .buy
+    &-quantity
+      &__subtitle 
+        display: none
+      &__control 
+        width: 100%
+      &__value 
+        width: 90%
+    &__add 
+      display: none
+    &__favorites 
+      width: 100%

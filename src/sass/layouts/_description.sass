@@ -1,0 +1,118 @@
+.description 
+
+  &-list 
+    &__item 
+      padding: 24px 0
+      padding-right: 24px
+      border-top: 1px solid $input-border-color 
+      border-bottom: 1px solid $input-border-color 
+      &_view 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+
+  &-content 
+    // display: none
+    &__item 
+      padding-top: 30px
+      display: flex
+      &:last-child > .description__text 
+        border-bottom: none
+      &:first-child 
+        padding-top: 49px
+
+  &__title 
+    font-size: 28px
+    line-height: 40px
+    +Poppins-Medium
+
+  &__subtitle 
+    width: 264px 
+    margin-right: 24px
+    font-size: 18px
+    line-height: 27px
+    color: $main-color
+    +Poppins-Medium
+
+  &__text 
+    margin: 0
+    font-size: 18px
+    line-height: 27px
+    width: 552px
+    padding-bottom: 20px
+    border-bottom: 1px solid $input-border-color 
+    color: $medium-text-color
+    +Poppins
+
+  &_right 
+    display: flex
+
+  &__stars
+    margin-right: 40px 
+
+  &__star 
+    margin-right: 8px
+    fill: $main-color 
+    &:nth-child(4), &:last-child 
+      fill: $disabled-star-color
+
+  &__review
+    width: 100% 
+    padding: 15px
+    border-radius: 4px
+    background-color: $secondary-color
+    margin-top: 30px
+
+
+  &-histogram 
+
+    &__title 
+      margin-bottom: 15px
+      font-size: 18px
+      line-height: 27px
+      color: $main-color
+      +Poppins-Medium
+
+    &__subtitle 
+      width: 46px
+      margin-right: 10px
+
+    &__progress 
+      position: relative
+      width: 411px 
+      height: 16px 
+      background-color: $background-progress-color
+      margin-right: 15px
+      &:after 
+        content: "" 
+        position: absolute
+        top: 0
+        left: 0
+        width: 411px 
+        height: 16px 
+        background-color: $background-progress-color
+        
+    &__item 
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 20px
+      &:first-child 
+        color: $main-color
+        .description-histogram__progress:after
+          background-color: $main-color
+
+.active 
+  display: block
+
+@media (max-width: 1280px) 
+  .description 
+    &__subtitle 
+      width: 200px 
+    &-histogram 
+      &__progress 
+        width: 360px 
+        &:after 
+          width: 360px
