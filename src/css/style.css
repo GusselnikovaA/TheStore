@@ -437,6 +437,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input {
+  -moz-appearance: textfield;
+}
+
 .progress::-moz-progress-bar {
   background-color: #212121;
 }
@@ -1607,6 +1611,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   .description-list__item {
     padding-right: 0;
   }
+  .description-list__item:last-child .description-content__item:last-child .description__subtitle {
+    display: none;
+  }
   .description__title {
     font-size: 18px;
   }
@@ -1629,9 +1636,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .description-content__item:last-child .description__subtitle {
-    display: none;
   }
 }
 
@@ -2240,6 +2244,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   }
   .recommend-card__title {
     margin-bottom: 40px;
+  }
+  .recommend__like {
+    display: none;
   }
 }
 

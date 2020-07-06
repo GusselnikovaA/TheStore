@@ -128,6 +128,11 @@
     &-list 
       &__item 
         padding-right: 0
+        &:last-child 
+          .description-content__item
+            &:last-child 
+              .description__subtitle 
+                display: none
 
     &__title 
       font-size: 18px
@@ -149,9 +154,6 @@
     &-content 
       &__item 
         flex-direction: column
-        &:last-child 
-          .description__subtitle 
-            display: none
 
 @media (max-width: 550px) 
   .description
