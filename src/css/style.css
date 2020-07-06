@@ -498,6 +498,32 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   }
 }
 
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1427,6 +1453,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  z-index: 10;
+}
+
+.description-content {
+  display: none;
 }
 
 .description-content__item {
@@ -1442,6 +1473,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .description-content__item:first-child {
   padding-top: 49px;
+}
+
+.description-content .active {
+  display: block;
+  -webkit-animation: fadeInDown 0.5s ease both;
+          animation: fadeInDown 0.5s ease both;
 }
 
 .description__title {
@@ -1541,6 +1578,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .active {
   display: block;
+  -webkit-animation: fadeInDown 0.5s ease both;
+          animation: fadeInDown 0.5s ease both;
 }
 
 @media (max-width: 1280px) {

@@ -11,9 +11,10 @@
         justify-content: space-between
         align-items: center
         cursor: pointer
+        z-index: 10
 
-  &-content 
-    // display: none
+  &-content
+    display: none
     &__item 
       padding-top: 30px
       display: flex
@@ -21,6 +22,9 @@
         border-bottom: none
       &:first-child 
         padding-top: 49px
+    .active 
+      display: block
+      animation: fadeInDown 0.5s ease both
 
   &__title 
     font-size: 28px
@@ -98,6 +102,7 @@
 
 .active 
   display: block
+  animation: fadeInDown 0.5s ease both
 
 @media (max-width: 1280px) 
   .description 
