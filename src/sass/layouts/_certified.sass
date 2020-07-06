@@ -1,21 +1,25 @@
 .certified
-  padding: 45px 0
+  padding: 52px 0
+
   &__title 
     font-size: 28px
-    line-height: 40px
-    margin-bottom: 50px
+    margin-bottom: 70px
     +Poppins-Medium
+
   &-list 
     display: flex
+
     &__item 
       margin-right: 33px
       font-size: 18px
-      line-height: 27px
       +Poppins
       color: $medium-text-color
       max-width: 160px
       &:last-child 
         max-width: 180px
+
+  &__text 
+    margin-top: 5px
 
 @media (max-width: 1280px)
   .certified 
@@ -23,9 +27,46 @@
       &__item 
         margin-right: 13px
 
-@media (max-width: 1080px)
-  .certified 
+@media (max-width: 900px)
+  .certified  
     &-list 
+      justify-content: space-between
+      flex-wrap: wrap
+
       &__item 
-        max-width: 200px
-        margin-right: 13px
+        display: flex
+        align-items: center
+        margin-right: 0
+        margin-bottom: 50px
+        max-width: 45%
+        &:last-child, &:nth-child(3) 
+          max-width: 45%
+          .certified__check-icon 
+            width: 38px
+
+    &__check
+      &-icon 
+        margin-right: 14px
+        
+    &__text 
+      margin: 0
+
+@media (max-width: 800px)
+  .certified 
+    padding: 0
+    &__title 
+      font-size: 18px
+      max-width: 200px
+      margin-bottom: 21px
+    &-list 
+      flex-direction: column
+      &__item 
+        max-width: 100%
+        &:last-child, &:nth-child(3) 
+          max-width: 100%
+          .certified__check-icon 
+            width: 28px
+    &__text 
+      font-size: 14px
+      max-width: 190px
+      margin: 0

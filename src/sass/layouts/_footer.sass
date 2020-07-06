@@ -1,7 +1,9 @@
 .footer 
+
   &-container 
     max-width: 1128px
     margin: auto
+
   &-wrap 
     display: flex
     flex-direction: column
@@ -12,19 +14,23 @@
     padding-top: 90px 
     padding-bottom: 100px
     &__title 
-      margin-bottom: 14px
+      margin-bottom: 18px
       font-size: 28px
-      line-height: 40px
       +Poppins-Medium
+
   &-rate, &-discount 
-    width: 50% 
     display: flex 
     flex-direction: column 
   &-rate 
+    width: 46%
+  &-discount 
+    width: 54%
+
+  &-rate 
     &__stars 
-      margin-bottom: 16px
+      margin-bottom: 19px
     &__star 
-      margin-right: 12px
+      margin-right: 16px
       &:first-child 
         fill: #EB4CAE
       &:nth-child(2) 
@@ -36,20 +42,18 @@
       &:last-child 
         fill: #B636C6
     &__text 
-      // font-size: 14px
-      line-height: 20px
-      margin-bottom: 50px
+      margin-bottom: 40px
       color: $medium-text-color
+
   &-discount 
     &__text 
       max-width: 410px
-      line-height: 20px
       margin: 0
-      margin-bottom: 30px
+      margin-bottom: 15px
       color: $medium-text-color
+
   &-form 
     font-size: 18px
-    line-height: 27px
     +Poppins-Medium
     &__input 
       width: 306px
@@ -69,6 +73,7 @@
     position: absolute 
     top: 0
     left: 0
+
     &__back 
       display: flex
       align-items: center
@@ -79,11 +84,12 @@
       svg 
         stroke: $light-color
         margin-right: 11px
+
     &-list 
       display: flex
       padding: 20px 0
+
     &__item
-      line-height: 20px
       &:not(:first-child)
         &:before 
           content: " / "
@@ -123,7 +129,6 @@
         margin-top: 15px
 
     &__title 
-      line-height: 16px
       margin-bottom: 10px
       color: $light-color
 
@@ -132,7 +137,6 @@
 
   &-list 
     &__item 
-      line-height: 16px
       margin-bottom: 10px
 
   &-social 
@@ -144,7 +148,6 @@
   &-support 
     &__call 
       font-size: 18px
-      line-height: 27px
       +Poppins-Medium
 
   &__info 
@@ -170,30 +173,36 @@
     border: 1px solid $medium-text-color
     border-radius: 2px
     color: $light-color
-    line-height: 24px
+
     &__name, &__language
       padding: 0 20px
       border-right: 1px solid $medium-text-color
+
     &__currency 
       padding-left: 20px
 
   &-contact 
     font-size: 12px
+
     &_mobile
       display: none
       justify-content: space-between
 
 @media (max-width: 1050px)
   .footer 
+
     &-nav 
       flex-wrap: wrap
+
       &__item 
         width: 30%
+
         &:first-child 
           margin-bottom: 30px
     
     &-rate 
       width: 45%
+
     &-discount 
       width: 55%
 
@@ -204,6 +213,7 @@
 
 @media (max-width: 890px)
   .footer 
+
     &-offer  
       flex-direction: column
       padding-top: 50px
@@ -212,10 +222,13 @@
     &-rate 
       width: 100%
       margin-bottom: 50px
+
     &-discount 
       width: 100%
+
       &__text 
         max-width: 70%
+
     &-form 
       &__input 
         width: 70%
@@ -230,20 +243,24 @@
     &__info 
       flex-direction: column
       margin-top: 30px
+
     &__copyright 
       flex-direction: column
       a 
         margin-bottom: 18px
         margin-right: 0
+        
     &-country 
       order: -1
       margin-bottom: 30px
 
 @media (max-width: 576px)
   .footer 
+
     &-offer 
       padding-top: 12px
       padding-bottom: 16px
+
       &__title 
         font-size: 18px
         margin-bottom: 8px
@@ -251,6 +268,10 @@
     &-rate 
       &__stars 
         margin-bottom: 12px
+
+      &__star 
+        margin-right: 12px
+
       &__text 
         margin-bottom: 30px
 
@@ -266,13 +287,16 @@
         margin-right: 0
         font-size: 16px
         font-family: "Helvetica", sans-serif
+
       &__button 
         width: 100%
       
     &-nav 
       display: none
+
       &_mobile 
         display: flex
+
       &__item 
         width: 100%
         padding: 17px 0
@@ -287,7 +311,6 @@
     &__copyright 
       span
         max-width: 200px
-        line-height: 20px
         text-align: center
 
     &-social 

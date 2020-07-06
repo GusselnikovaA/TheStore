@@ -2,12 +2,15 @@
   width: 25%
   padding-left: 20px
   padding-top: 44px
+
   &__share 
     margin-bottom: 27px
     color: $main-color 
     text-align: right
+
   &__buy 
     margin-bottom: 16px
+
   &__protection
     margin-bottom: 16px
 
@@ -27,23 +30,66 @@
     max-width: 100%
     width: 100%
     padding-left: 0
+
     &__share 
       position: absolute
       top: -500px
       right: 25px
-    &__buy, &__protection, &__policy 
-      width: 30%
-    &__buy, &__protection
-      margin-right: 20px
 
-@media (max-width: 900px)
+    &__buy, &__protection
+      margin-right: 10px
+
+@media (max-width: 915px)
   .aside 
     top: 450px
+
+    &__share 
+      top: -430px
+
     &__buy 
       width: 100%
-    &__protection, &__policy
-      width: 45%
+    
     &__buy
       margin-right: 0
+
     &__protection
       margin-right: 20px
+
+@media (max-width: 768px)
+  .aside 
+    top: 450px
+
+    &__share 
+      top: -400px
+
+@media (max-width: 670px)
+  .aside 
+    top: 770px
+
+    &__share 
+      top: -750px
+
+    &__protection, &__policy
+      width: 100%
+      margin-right: 0
+
+@media (max-width: 570px)
+  .aside 
+    top: 710px
+
+    &__share 
+      top: -690px
+
+@media (max-width: 414px)
+  .aside 
+    top: 650px
+
+    &__share 
+      top: -630px
+
+@media (max-width: 320px)
+  .aside 
+    top: 580px
+    
+    &__share 
+      top: -560px

@@ -1,6 +1,10 @@
 .product 
   .container
-    nav.product-nav 
+    nav.product-nav
+      a.product-nav__back(href="#") 
+        svg(width="24" height="24")
+          use(xlink:href="#arrow-back")
+        span Back
       ul.list.product-nav-list 
         li.product-nav-list__item 
           a(href="#") Main Page 
@@ -37,7 +41,7 @@
           .product__add 
             button.button.product__add-button
               span.product__add-amount $300.00 — Qty 1
-              span Add to cart
+              span.product__add-text Add to cart
           .product-grade 
             span Product grade: 
             span.product-grade__status ReStored 

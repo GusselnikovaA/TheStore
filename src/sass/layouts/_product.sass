@@ -1,29 +1,38 @@
 .product 
   width: 75%
   padding-bottom: 83px
-  &-nav-list 
-    display: flex
-    padding: 20px 0
-    &__item
-      line-height: 20px
-      &:not(:first-child)
-        &:before 
-          content: " / "
-          white-space: pre
-      &:last-child 
-        color: $medium-text-color
+
+  &-nav
+    &__back 
+      display: none
+
+    &-list 
+      display: flex
+      padding: 20px 0
+
+      &__item
+        &:not(:first-child)
+          &:before 
+            content: " / "
+            white-space: pre
+        &:last-child 
+          color: $medium-text-color
 
   &-main 
     display: flex
     flex-direction: column
+    padding-top: 25px
+
   &-wrap
     display: flex
 
   &-image 
     width: 60%
     position: relative
+
     &__scale
       fill: $light-color
+
       &-button 
         position: absolute
         bottom: 20px
@@ -35,50 +44,75 @@
         justify-content: center
         align-items: center
         background-color: $disabled-star-color
+
   &-info 
     width: 40%
+
   &__title 
     font-size: 34px
-    line-height: 42px
-    margin-bottom: 30px
+    margin-bottom: 28px
     +Poppins-Medium
+
   &__by 
     color: $medium-text-color
     a 
       color: $main-color
+
   &-rate 
-    margin-bottom: 40px
+    margin-bottom: 26px
     display: flex
     align-items: center
-    line-height: 40px
+
     &__number 
       margin-left: 5px
       color: $link-color
+
     &__star 
       margin-right: 5px
       fill: $main-color 
       &:nth-child(4), &:nth-child(5) 
         fill: $disabled-star-color
+
   &__price 
-    margin-bottom: 31px
+    margin-bottom: 35px
+
     &_new 
       font-size: 28px
-      line-height: 40px
       margin-right: 20px
       +Poppins-Medium
+
     &_old 
       text-decoration-line: line-through
       color: $medium-text-color
+
   &__add 
     display: none
+
+    &-button 
+      padding: 16px
+      background-color: $secondary-color
+      width: 100%
+      height: 56px 
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 18px
+      border-radius: 4px
+
+    &-text 
+      font-size: 18px
+      +Poppins-Medium
 
   &-grade 
     color: $medium-text-color
     margin-bottom: 10px
+
     &__status 
       margin: 0 5px
+
     &__description 
       color: $link-color
+
   &-restore 
     width: 127px 
     height: 62px
@@ -89,9 +123,9 @@
     border: 2px solid $input-border-color
     border-radius: 4px
     color: $medium-text-color
+
     &__title
       font-size: 18px
-      line-height: 27px
       +Poppins-Medium
     span 
       display: block
@@ -99,24 +133,103 @@
 @media (max-width: 1280px) 
   .product
     width: 70%
+
     &-image
       width: 50% 
       margin-right: 40px
+
     &-info 
       width: 50%
 
 @media (max-width: 1080px)
   .product
     width: 100%
+
     &-certified 
       padding-top: 555px
 
-@media (max-width: 900px)
+@media (max-width: 915px)
   .product 
+    padding-bottom: 30px
+
+    &__title 
+      font-size: 28px
+
     &-certified 
       padding-top: 800px
+
+    &__price
+      display: none
+
     &__add 
       display: block
+
+@media (max-width: 768px)
+  .product
+    &-grade 
+      &__description 
+        display: block
+
+@media (max-width: 670px)
+  .product 
+    &-nav
+      &__back 
+        display: flex
+        align-items: center
+        padding: 20px 0
+        svg
+          stroke: $main-color
+          margin-right: 10px
+
+      &-list 
+        display: none
+
+    &-wrap 
+      flex-direction: column
+      position: relative
+
+    &-main 
+      padding-top: 0
+
+    &-image 
+      width: 70%
+      margin-right: 0
+      position: absolute 
+      top: 120px
+      left: 0
+      right: 0
+      margin: auto
+
+      &__scale 
+        &-button
+          right: 110%
+          width: 38px 
+          height: 38px
+    &-info 
+      width: 100%
+      order: -1
+
+    &__title 
+      margin-bottom: 10px
+
+    &__by 
+      display: none
+
+    &-rate 
+      margin-bottom: 90%
+      
+    &-certified
+      padding-top: 1150px
+
+@media (max-width: 420px)
+  .product 
+    &-certified
+      padding-top: 1100px
+
+@media (max-width: 320px)
+  .product 
+    &-certified
+      padding-top: 1100px
 
 
 

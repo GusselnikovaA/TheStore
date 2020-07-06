@@ -24,21 +24,18 @@
 
   &__title 
     font-size: 28px
-    line-height: 40px
     +Poppins-Medium
 
   &__subtitle 
     width: 264px 
-    margin-right: 24px
+    margin-right: 26px
     font-size: 18px
-    line-height: 27px
     color: $main-color
     +Poppins-Medium
 
   &__text 
     margin: 0
     font-size: 18px
-    line-height: 27px
     width: 552px
     padding-bottom: 20px
     border-bottom: 1px solid $input-border-color 
@@ -52,7 +49,7 @@
     margin-right: 40px 
 
   &__star 
-    margin-right: 8px
+    margin-right: 5px
     fill: $main-color 
     &:nth-child(4), &:last-child 
       fill: $disabled-star-color
@@ -62,21 +59,19 @@
     padding: 15px
     border-radius: 4px
     background-color: $secondary-color
-    margin-top: 30px
+    margin-top: 10px
 
 
   &-histogram 
-
     &__title 
-      margin-bottom: 15px
+      margin-bottom: 8px
       font-size: 18px
-      line-height: 27px
       color: $main-color
       +Poppins-Medium
 
     &__subtitle 
       width: 46px
-      margin-right: 10px
+      margin-right: 6px
 
     &__progress 
       position: relative
@@ -96,9 +91,8 @@
     &__item 
       display: flex
       align-items: center
-      margin-bottom: 10px
+      margin-bottom: 14px
       font-size: 14px
-      line-height: 20px
       &:first-child 
         color: $main-color
         .description-histogram__progress:after
@@ -111,8 +105,63 @@
   .description 
     &__subtitle 
       width: 200px 
+
     &-histogram 
       &__progress 
         width: 360px 
         &:after 
           width: 360px
+
+@media (max-width: 900px) 
+  .description
+    &-histogram 
+      &__progress 
+        width: 300px 
+        &:after 
+          width: 300px
+
+@media (max-width: 800px) 
+  .description
+    &-list 
+      &__item 
+        padding-right: 0
+
+    &__title 
+      font-size: 18px
+
+    &__subtitle 
+      margin-right: 0
+      margin-bottom: 15px
+
+    &__review 
+      margin-top: 0
+
+    &-histogram 
+      margin-top: 28px
+
+    &__text 
+      width: 100%
+      font-size: 14px
+
+    &-content 
+      &__item 
+        flex-direction: column
+        &:last-child 
+          .description__subtitle 
+            display: none
+
+@media (max-width: 550px) 
+  .description
+    &-histogram 
+
+      &__title 
+        margin-bottom: 10px
+
+      &__progress 
+        width: 167px 
+        margin-right: 10px
+        &:after 
+          width: 167px
+          
+    &__stars 
+      display: none
