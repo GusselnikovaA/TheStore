@@ -437,6 +437,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.progress::-moz-progress-bar {
+  background-color: #212121;
+}
+
 .button {
   outline: none;
   cursor: pointer;
@@ -470,6 +474,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   .container {
     width: 90%;
     max-width: 1050px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 95%;
   }
 }
 
@@ -1206,8 +1216,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 .product__price_old {
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration: line-through;
   color: #757575;
 }
 
@@ -1530,10 +1539,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color: #212121;
 }
 
-.description-histogram__item:first-child .description-histogram__progress:after {
-  background-color: #212121;
-}
-
 .active {
   display: block;
 }
@@ -1812,8 +1817,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .buy__price_old {
   margin-left: 10px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration: line-through;
   color: #757575;
 }
 
@@ -2106,8 +2110,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 .recommend-card__old-price {
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration: line-through;
   color: #757575;
 }
 

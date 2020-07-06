@@ -57,7 +57,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
   -webkit-appearance: none
   appearance: none
   margin: 0
-  // Apparently some margin are still there even though it's hidden
+
+.progress::-moz-progress-bar 
+  background-color: $main-color
 
 // svg path
 //   fill: inherit
@@ -88,6 +90,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
   .container 
     width: 90%
     max-width: 1050px
+
+@media (max-width: 420px)
+  .container 
+    width: 95%
 
 
 // HOVER ЭФФЕКТЫ 
