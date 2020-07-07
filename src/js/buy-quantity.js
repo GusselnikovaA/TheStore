@@ -24,21 +24,21 @@ plus.addEventListener('click', (e) => {
   colorChange(amount.value);
 });
 
-amount.addEventListener('keydown', (event) => {
+amount.addEventListener('keyup', (e) => {
 
-  if ((event.keyCode >= 48 && event.keyCode <= 57) || event.keyCode === 8 || event.keyCode === 39 || event.keyCode === 37) {
-      return
-  } else {
-    event.preventDefault();
-  };
-
+  if (this.value.match(/[^0-9]/g)) {
+    this.value = parseInt(this.value.replace(/[^0-9]/g, ''), 10);
+  }
+    
+  if (typeof this.value == 'undefined' || isNaN(this.value) || this.value == '' || this.value == '0') {
+    this.value = 1;
+  }
+    
   if(amount.value < 1) {
     amount.value = 1;
-  };
-
-  if(amount.value > 10) {
+  } else if (amount.value > 10) {
     amount.value = 10;
-  };
+  }
 
   colorChange(amount.value);
 })
