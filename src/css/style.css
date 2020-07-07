@@ -416,11 +416,29 @@ a {
   border: none;
 }
 
-.progress {
+progress {
   outline: none;
   border: none;
-  -webkit-appearance: none;
   overflow: hidden;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #F5F5F5;
+}
+
+progress::-webkit-progress-value {
+  background-color: #212121;
+}
+
+progress::-moz-progress-bar {
+  background-color: #212121;
+}
+
+progress::-ms-fill {
+  background-color: #212121;
 }
 
 ::-webkit-input-placeholder {
@@ -439,10 +457,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 input {
   -moz-appearance: textfield;
-}
-
-.progress::-moz-progress-bar {
-  background-color: #212121;
 }
 
 .button {
@@ -1553,16 +1567,6 @@ input {
   height: 16px;
   background-color: #F5F5F5;
   margin-right: 15px;
-}
-
-.description-histogram__progress:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 411px;
-  height: 16px;
-  background-color: #F5F5F5;
 }
 
 .description-histogram__item {

@@ -37,11 +37,20 @@ a
   outline: none
   border: none
 
-.progress 
+progress 
   outline: none
   border: none
-  -webkit-appearance: none
   overflow: hidden
+  appearance: none
+  -webkit-appearance: none
+  &::-webkit-progress-bar
+    background-color: $background-progress-color
+  &::-webkit-progress-value
+    background-color: $main-color
+  &::-moz-progress-bar
+    background-color: $main-color
+  &::-ms-fill
+    background-color: $main-color
 
 ::-webkit-input-placeholder
   color: $medium-text-color
@@ -60,9 +69,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
 
 input 
   -moz-appearance: textfield
-
-.progress::-moz-progress-bar 
-  background-color: $main-color
 
 // svg path
 //   fill: inherit

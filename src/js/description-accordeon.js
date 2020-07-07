@@ -1,6 +1,5 @@
 const accordeonItems = document.querySelectorAll('.description-list__item_view');
 
-
 accordeonItems.forEach(item => {
   item.addEventListener('click', (e) => {
     const accordeonIcon = item.querySelector('.description_open');
