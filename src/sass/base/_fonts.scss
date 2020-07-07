@@ -29,11 +29,26 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Helvetica Medium';
+  src: url('../fonts/Helvetica/HelveticaNowDisplay-Medium.eot');
+  src: url('../fonts/Helvetica/HelveticaNowDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Helvetica/HelveticaNowDisplay-Medium.woff2') format('woff2'),
+      url('../fonts/Helvetica/HelveticaNowDisplay-Medium.woff') format('woff'),
+      url('../fonts/Helvetica/HelveticaNowDisplay-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @mixin Poppins-Medium {
   font-family: 'Poppins Medium', sans-serif;
 }
 
 @mixin Poppins {
   font-family: 'Poppins Regular', sans-serif;
+}
+
+@mixin Helvetica-Medium {
+  font-family: 'Helvetica Medium', sans-serif;
 }
 

@@ -366,6 +366,14 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Helvetica Medium';
+  src: url("../fonts/Helvetica/HelveticaNowDisplay-Medium.eot");
+  src: url("../fonts/Helvetica/HelveticaNowDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/HelveticaNowDisplay-Medium.woff2") format("woff2"), url("../fonts/Helvetica/HelveticaNowDisplay-Medium.woff") format("woff"), url("../fonts/Helvetica/HelveticaNowDisplay-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1853,6 +1861,7 @@ input {
 .buy__ships {
   display: block;
   margin-bottom: 24px;
+  font-family: 'Helvetica Medium', sans-serif;
 }
 
 .buy-quantity {
@@ -1908,6 +1917,10 @@ input {
   margin-bottom: 23px;
 }
 
+.buy__price_new {
+  font-family: 'Helvetica Medium', sans-serif;
+}
+
 .buy__price_old {
   margin-left: 10px;
   text-decoration: line-through;
@@ -1945,6 +1958,7 @@ input {
 
 .buy__deliver span {
   color: #212121;
+  font-family: 'Helvetica Medium', sans-serif;
 }
 
 .buy__favorites {
@@ -2042,6 +2056,7 @@ input {
 
 .protection-link {
   margin-top: 17px;
+  font-family: 'Helvetica Medium', sans-serif;
 }
 
 .policy {
@@ -2084,6 +2099,7 @@ input {
 .policy-list__item {
   padding: 16px 0;
   border-top: 1px solid #D6D6D6;
+  font-family: 'Helvetica Medium', sans-serif;
 }
 
 .recommend {
