@@ -10,6 +10,12 @@
     margin-bottom: 39px
     font-size: 34px
     +Poppins-Medium
+    &_mobile 
+      display: none
+
+  &__subtitle
+    &_mobile 
+      display: none
 
   &-slider 
     &__item 
@@ -143,6 +149,22 @@
   .recommend 
     padding-top: 60px 
     padding-bottom: 60px
+
+    &__title 
+      display: none 
+      &_mobile 
+        font-size: 34px
+        +Poppins-Medium
+        display: block
+        margin-bottom: 8px
+        margin-left: 12px
+        
+    &__subtitle
+      &_mobile 
+        display: block
+        margin-bottom: 24px
+        margin-left: 12px
+        color: $link-color
 
     &-card 
       &:before 

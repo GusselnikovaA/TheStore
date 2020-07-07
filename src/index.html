@@ -54,7 +54,7 @@
           <div class="header-icons__cart"><a href="#" target="_blank">
               <svg class="header__cart" width="28" height="28">
                 <use xlink:href="#cart"></use>
-              </svg></a></div>
+              </svg><span class="header-icons__cart-count">1</span></a></div>
         </div>
       </div>
     </header>
@@ -102,7 +102,7 @@
           </nav>
           <div class="product-main"> 
             <div class="product-wrap">
-              <div class="product-image"> <img src="img/ipad.jpg" alt="ipad">
+              <div class="product-image"> <img src="img/ipad.jpg" srcset="img/ipad.jpg 1x, img/ipad@2x.jpg 2x" alt="ipad">
                 <button class="button product-image__scale-button">
                   <svg class="product-image__scale" width="28" height="28">
                     <use xlink:href="#search"></use>
@@ -381,6 +381,7 @@
     <section class="recommend"> 
       <div class="container recommend-wrap">
         <h2 class="title recommend__title">You might also like... </h2>
+        <h2 class="title recommend__title_mobile">Picked for you</h2><a class="recommend__subtitle_mobile" href="#">View All</a>
         <div class="recommend-slider"> 
           <div class="recommend-slider__item"><a href="#">
               <div class="recommend-card">
@@ -479,7 +480,7 @@
                   </svg>
                 </div>
                 <div class="footer-rate__text">“Excellent”</div>
-                <div class="footer-rate__logo"> <img src="img/footer/rate-logo.png" alt="rate logo"></div>
+                <div class="footer-rate__logo"> <img src="img/footer/rate-logo.png" srcset="img/footer/rate-logo.png 1x, img/footer/rate-logo@2x.png 2x" alt="rate logo"></div>
               </div>
               <div class="footer-discount">
                 <h3 class="title footer-offer__title">Save 15% today*</h3>
@@ -686,8 +687,8 @@
         <path d="M13.8 13.6C16.451 13.6 18.6 11.451 18.6 8.8C18.6 6.14903 16.451 4 13.8 4C11.149 4 9 6.14903 9 8.8C9 11.451 11.149 13.6 13.8 13.6Z" stroke-width="2" stroke-miterlimit="10"></path>
       </symbol>
       <symbol id="cart" viewBox="0 0 28 28" fill="none">
-        <path d="M7.73857 22L4.35396 11H23.646L20.2614 22H7.73857Z" stroke-width="2"></path>
-        <path d="M18 10V10C18 7.79086 16.2091 6 14 6V6C11.7909 6 10 7.79086 10 10V10" stroke-width="2"></path>
+        <path d="M7.73857 22L4.35396 11H23.646L20.2614 22H7.73857Z" fill="#212121" stroke="#212121" stroke-width="2"></path>
+        <path d="M18 10V10C18 7.79086 16.2091 6 14 6V6C11.7909 6 10 7.79086 10 10V10" stroke="#212121" stroke-width="2"></path>
       </symbol>
       <symbol id="search" viewBox="0 0 28 28">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 7.5815 7.582 4 12 4C16.418 4 20 7.5815 20 12C20 16.4185 16.418 20 12 20C7.582 20 4 16.4185 4 12ZM18 12C18 8.6915 15.3085 6 12 6C8.6915 6 6 8.6915 6 12C6 15.3085 8.6915 18 12 18C15.3085 18 18 15.3085 18 12ZM17.6109 19.0844C18.1549 18.6489 18.6489 18.1549 19.0844 17.6109L23.9999 22.5264L22.5264 23.9999L17.6109 19.0844Z"></path>

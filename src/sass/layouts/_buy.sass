@@ -32,10 +32,13 @@
       border-radius: 4px
 
     &__plus, &__minus 
-      width: 48px 
-      height: 48px 
+      width: 44px 
+      height: 44px 
       background-color: $light-color
-
+    &__plus
+      &-icon 
+        stroke: $main-color
+    &__minus
       &-icon 
         stroke: $disabled-color
 
@@ -48,7 +51,7 @@
       color: $medium-text-color
 
     &__value 
-      width: 75px
+      width: 72px
 
   &__price 
     margin-bottom: 23px
@@ -69,6 +72,8 @@
     justify-content: center
     margin-bottom: 58px
     border-radius: 4px
+    &:hover 
+      background-color: $secondary-hover-color
 
   &__deliver 
     color: $medium-text-color 
@@ -87,6 +92,8 @@
     +Poppins-Medium
     border-radius: 4px
     background-color: $input-border-color
+    &:hover 
+      background-color: $input-border-hover-color
 
     &-icon 
       stroke: $main-color
