@@ -119,6 +119,10 @@
     display: none;
 }
 
+.slick-arrow {
+    display: flex !important;
+}
+
 .slick-disabled {
     display: none !important; 
 }

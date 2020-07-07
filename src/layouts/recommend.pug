@@ -8,7 +8,7 @@ section.recommend
         a(href="#")
           .recommend-card
             .recommend-card__image
-              img(src="img/items/item1.jpg" alt="logitech crayon for ipad")
+              img(src="img/items/item1.jpg" srcset="img/items/item1.jpg 1x, img/items/item1@2x.jpg 2x" alt="logitech crayon for ipad")
             h3.title.recommend-card__title Logitech Crayon for iPad
             .recommend-card__info 
               .recommend-card__condition ReStored
@@ -21,7 +21,7 @@ section.recommend
         a(href="#")
           .recommend-card
             .recommend-card__image
-              img(src="img/items/item2.jpg" alt="smart cover for ipad")
+              img(src="img/items/item2.jpg" srcset="img/items/item2.jpg 1x, img/items/item2@2x.jpg 2x" alt="smart cover for ipad")
             h3.title.recommend-card__title Smart Cover for iPad
             .recommend-card__info 
               .recommend-card__condition ReStored
@@ -34,7 +34,7 @@ section.recommend
         a(href="#")
           .recommend-card
             .recommend-card__image
-              img(src="img/items/item3.jpg" alt="iphone xr red")
+              img(src="img/items/item3.jpg" srcset="img/items/item3.jpg 1x, img/items/item3@2x.jpg 2x" alt="iphone xr red")
             h3.title.recommend-card__title IPhone XR “Red”
             .recommend-card__rate
               svg.recommend-card__star(width="16" height="16")
@@ -59,7 +59,7 @@ section.recommend
         a(href="#")
           .recommend-card
             .recommend-card__image
-              img(src="img/items/item2.jpg" alt="smart cover for ipad")
+              img(src="img/items/item4.jpg" srcset="img/items/item4.jpg 1x, img/items/item4@2x.jpg 2x" alt="Smart Cover for iPad")
             h3.title.recommend-card__title Smart Cover for iPad
             .recommend-card__info 
               .recommend-card__condition ReStored
@@ -69,8 +69,10 @@ section.recommend
           svg.recommend__like(width="28" height="28")
               use(xlink:href="#like")
     .recommend-arrows
-          svg.recommend-arrows__left(width="22" height="16")
-            use(xlink:href="#arrow-back")
-          svg.recommend-arrows__right(width="22" height="16")
-            use(xlink:href="#arrow-next")
+          .recommend-arrows__container.recommend-arrows__left
+            svg(width="22" height="16")
+              use(xlink:href="#arrow-back")
+          .recommend-arrows__container.recommend-arrows__right
+            svg(width="22" height="16")
+              use(xlink:href="#arrow-next")
 

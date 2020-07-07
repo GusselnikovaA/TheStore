@@ -7,13 +7,6 @@ $('.recommend-slider').slick({
   prevArrow: $('.recommend-arrows__left'),
   nextArrow: $('.recommend-arrows__right'),
   responsive: [
-    // {
-    //   breakpoint: 1300,
-    //   settings: {
-    //     slidesToShow: 3,
-    //     arrows: false
-    //   }
-    // },
     {
       breakpoint: 1000,
       settings: {
