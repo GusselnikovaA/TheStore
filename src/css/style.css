@@ -2299,6 +2299,7 @@ input {
         -ms-flex-order: -1;
             order: -1;
     margin-bottom: 30px;
+    min-height: 56px;
   }
   .recommend-card__image {
     margin-bottom: 11px;
