@@ -2234,6 +2234,7 @@ input {
 
 .recommend-card__new-price {
   margin-right: 10px;
+  font-family: 'Helvetica Medium', sans-serif;
 }
 
 .recommend-card__old-price {
@@ -2602,6 +2603,7 @@ input {
 .footer-nav__title {
   margin-bottom: 10px;
   color: #ffffff;
+  font-family: 'Helvetica Medium', sans-serif;
 }
 
 .footer_open {
