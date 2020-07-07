@@ -174,13 +174,13 @@
             <div class="product-accordeon"> 
               <ul class="list description-list">
                 <li class="description-list__item">
-                  <div class="description-list__item_view">
+                  <div class="description-list__item_view accordeon-headline">
                     <h2 class="title description__title">Product information</h2>
-                    <svg class="description_open" width="30" height="28">
+                    <svg class="description_open accordeon-button" width="30" height="28">
                       <use xlink:href="#plus"></use>
                     </svg>
                   </div>
-                  <div class="description-content">
+                  <div class="description-content accordeon-content">
                     <div class="description-content__item">
                       <h3 class="title description__subtitle">Overview</h3>
                       <ul class="list description__text description-overview"> 
@@ -207,29 +207,29 @@
                   </div>
                 </li>
                 <li class="description-list__item">
-                  <div class="description-list__item_view">
+                  <div class="description-list__item_view accordeon-headline">
                     <h2 class="title description__title">Technical specifications</h2>
-                    <svg class="description_open" width="30" height="28">
+                    <svg class="description_open accordeon-button" width="30" height="28">
                       <use xlink:href="#plus"></use>
                     </svg>
                   </div>
-                  <div class="description-content">
+                  <div class="description-content accordeon-content">
                     <div class="description-content__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                   </div>
                 </li>
                 <li class="description-list__item">
-                  <div class="description-list__item_view">
+                  <div class="description-list__item_view accordeon-headline">
                     <h2 class="title description__title">Product history</h2>
-                    <svg class="description_open" width="30" height="28">
+                    <svg class="description_open accordeon-button" width="30" height="28">
                       <use xlink:href="#plus"></use>
                     </svg>
                   </div>
-                  <div class="description-content">
+                  <div class="description-content accordeon-content">
                     <div class="description-content__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                   </div>
                 </li>
                 <li class="description-list__item">
-                  <div class="description-list__item_view">
+                  <div class="description-list__item_view accordeon-headline">
                     <h2 class="title description__title">Customer review (1)</h2>
                     <div class="description_right">
                       <div class="description__stars"> 
@@ -249,12 +249,12 @@
                           <use xlink:href="#star-mini"></use>
                         </svg>
                       </div>
-                      <svg class="description_open" width="30" height="28">
+                      <svg class="description_open accordeon-button" width="30" height="28">
                         <use xlink:href="#minus"></use>
                       </svg>
                     </div>
                   </div>
-                  <div class="description-content active">
+                  <div class="description-content accordeon-content active">
                     <div class="description-content__item">
                       <div class="description__subtitle"> 
                         <h3 class="title description__subtitle">Review this product</h3>
@@ -403,6 +403,7 @@
               <div class="recommend-card">
                 <div class="recommend-card__image"><img src="img/items/item1.jpg" srcset="img/items/item1.jpg 1x, img/items/item1@2x.jpg 2x" alt="logitech crayon for ipad"></div>
                 <h3 class="title recommend-card__title">Logitech Crayon for iPad</h3>
+                <div class="recommend-card__rate"></div>
                 <div class="recommend-card__info"> 
                   <div class="recommend-card__condition">ReStored</div><span class="recommend-card__new-price">$50.00 </span><span class="recommend-card__old-price">$ 100.00 </span>
                 </div>
@@ -414,6 +415,7 @@
               <div class="recommend-card">
                 <div class="recommend-card__image"><img src="img/items/item2.jpg" srcset="img/items/item2.jpg 1x, img/items/item2@2x.jpg 2x" alt="smart cover for ipad"></div>
                 <h3 class="title recommend-card__title">Smart Cover for iPad</h3>
+                <div class="recommend-card__rate"></div>
                 <div class="recommend-card__info"> 
                   <div class="recommend-card__condition">ReStored</div><span class="recommend-card__new-price">$150.00 </span><span class="recommend-card__old-price">$ 200.00</span>
                 </div>
@@ -453,6 +455,7 @@
               <div class="recommend-card">
                 <div class="recommend-card__image"><img src="img/items/item4.jpg" srcset="img/items/item4.jpg 1x, img/items/item4@2x.jpg 2x" alt="Smart Cover for iPad"></div>
                 <h3 class="title recommend-card__title">Smart Cover for iPad</h3>
+                <div class="recommend-card__rate"></div>
                 <div class="recommend-card__info"> 
                   <div class="recommend-card__condition">ReStored</div><span class="recommend-card__new-price">$150.00 </span><span class="recommend-card__old-price">$ 200.00</span>
                 </div>
@@ -590,13 +593,13 @@
               </nav>
               <ul class="list footer-nav_mobile">
                 <li class="footer-nav__item">
-                  <div class="footer-nav__item_view">
+                  <div class="footer-nav__item_view accordeon-headline">
                     <h2 class="title footer-nav_mobile__title">Shop</h2>
-                    <svg class="footer_open" width="16" height="16">
+                    <svg class="footer_open accordeon-button" width="16" height="16">
                       <use xlink:href="#plus"></use>
                     </svg>
                   </div>
-                  <ul class="list footer-nav__item_content">
+                  <ul class="list footer-nav__item_content accordeon-content">
                     <li class="footer-list__item"><a href="#" target="_blank">Brands</a></li>
                     <li class="footer-list__item"><a href="#" target="_blank">Hot Deals</a></li>
                     <li class="footer-list__item"><a href="#" target="_blank">Cellphones</a></li>
@@ -606,39 +609,39 @@
                   </ul>
                 </li>
                 <li class="footer-nav__item">
-                  <div class="footer-nav__item_view">
+                  <div class="footer-nav__item_view accordeon-headline">
                     <h2 class="title footer-nav_mobile__title">Customer Service</h2>
-                    <svg class="footer_open" width="16" height="16">
+                    <svg class="footer_open accordeon-button" width="16" height="16">
                       <use xlink:href="#plus"></use>
                     </svg>
                   </div>
-                  <ul class="list footer-nav__item_content">
+                  <ul class="list footer-nav__item_content accordeon-content">
                     <li class="footer-list__item"><a href="#" target="_blank">Contact Info</a></li>
                     <li class="footer-list__item"><a href="#" target="_blank">Shipping Rates & Policies</a></li>
                     <li class="footer-list__item"><a href="#" target="_blank">Returns & Refunds</a></li>
                   </ul>
                 </li>
                 <li class="footer-nav__item">
-                  <div class="footer-nav__item_view">
+                  <div class="footer-nav__item_view accordeon-headline">
                     <h2 class="title footer-nav_mobile__title">Manage Your Account</h2>
-                    <svg class="footer_open" width="16" height="16">
+                    <svg class="footer_open accordeon-button" width="16" height="16">
                       <use xlink:href="#plus"></use>
                     </svg>
                   </div>
-                  <ul class="list footer-nav__item_content">
+                  <ul class="list footer-nav__item_content accordeon-content">
                     <li class="footer-list__item"><a href="#" target="_blank">Your Orders</a></li>
                     <li class="footer-list__item"><a href="#" target="_blank">Your Account</a></li>
                     <li class="footer-list__item"><a href="#" target="_blank">Browsing History</a></li>
                   </ul>
                 </li>
                 <li class="footer-nav__item">
-                  <div class="footer-nav__item_view">
+                  <div class="footer-nav__item_view accordeon-headline">
                     <h2 class="title footer-nav_mobile__title">Get to Know Us</h2>
-                    <svg class="footer_open" width="16" height="16">
+                    <svg class="footer_open accordeon-button" width="16" height="16">
                       <use xlink:href="#plus"></use>
                     </svg>
                   </div>
-                  <ul class="list footer-nav__item_content">
+                  <ul class="list footer-nav__item_content accordeon-content">
                     <li class="footer-list__item"><a href="#" target="_blank">About Us</a></li>
                     <li class="footer-list__item"><a href="#" target="_blank">Why Certified ReStored?</a></li>
                     <li class="footer-list__item"><a href="#" target="_blank">FAQ</a></li>
@@ -777,7 +780,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/slider-settings.js"></script>
     <script src="js/buy-quantity.js"></script>
-    <script src="js/description-accordeon.js"></script> 
+    <script src="js/accordeon.js"></script> 
     <!-- endbuild -->
   </body>
 </html>

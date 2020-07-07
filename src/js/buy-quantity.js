@@ -24,7 +24,14 @@ plus.addEventListener('click', (e) => {
   colorChange(amount.value);
 });
 
-amount.addEventListener('keyup', (e) => {
+amount.addEventListener('keydown', (event) => {
+
+  if ((event.keyCode >= 48 && event.keyCode <= 57) || event.keyCode === 8 || event.keyCode === 39 || event.keyCode === 37) {
+      return
+  } else {
+    event.preventDefault();
+  };
+
   if(amount.value < 1) {
     amount.value = 1;
   };

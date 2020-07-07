@@ -1535,7 +1535,7 @@ input {
   padding-top: 49px;
 }
 
-.description-content .active {
+.description-content.active {
   display: block;
   -webkit-animation: fadeInDown 0.5s ease both;
           animation: fadeInDown 0.5s ease both;
@@ -1624,12 +1624,6 @@ input {
 
 .description-histogram__item:first-child {
   color: #212121;
-}
-
-.active {
-  display: block;
-  -webkit-animation: fadeInDown 0.5s ease both;
-          animation: fadeInDown 0.5s ease both;
 }
 
 @media (max-width: 1280px) {
@@ -2285,7 +2279,7 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 16px;
-    min-height: 420px;
+    min-height: 440px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2579,6 +2573,12 @@ input {
 .footer-nav__item_content {
   display: none;
   margin-top: 15px;
+}
+
+.footer-nav__item_content.active {
+  display: block;
+  -webkit-animation: fadeInDown 0.5s ease both;
+          animation: fadeInDown 0.5s ease both;
 }
 
 .footer-nav__title {
