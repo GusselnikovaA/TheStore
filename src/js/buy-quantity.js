@@ -24,7 +24,7 @@ plus.addEventListener('click', (e) => {
   colorChange(amount.value);
 });
 
-amount.addEventListener('keyup', (e) => {
+amount.addEventListener('keyup', function (e) {
 
   if (this.value.match(/[^0-9]/g)) {
     this.value = parseInt(this.value.replace(/[^0-9]/g, ''), 10);
@@ -41,7 +41,7 @@ amount.addEventListener('keyup', (e) => {
   }
 
   colorChange(amount.value);
-})
+});
 
 function colorChange(value) {
   if (value == 1) {
